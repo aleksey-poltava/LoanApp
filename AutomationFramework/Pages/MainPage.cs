@@ -21,8 +21,11 @@ namespace AutomationFramework.Pages
         {
             Driver.Instance.Navigate().GoToUrl(Driver.SiteRoot);
             if (!IsOn())
-                Driver.TestLogicFailed("Class name is: " + "Failed method is: IsOn() added comment");
-
+            {
+                Driver.TestLogicFailed("Class name is: " + "Failed method is: IsOn()");
+                return;
+            }
+            Driver.TestLogicFailed("GoTo page successfull");
         }
 
         public static bool IsOn()

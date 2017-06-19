@@ -1,6 +1,7 @@
 ﻿using AutomationFramework.Log;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
+using System;
 
 namespace DemoWebApp.Tests
 {
@@ -31,10 +32,11 @@ namespace DemoWebApp.Tests
             Instance = null;
         }
 
-        public static void TestLogicFailed(string s)
+        public static void TestLogicFailed(string failureText)
         {
             //add logging here
             isTestLogicFailed = true;
+            Console.WriteLine(failureText);
         }
     }
 }
