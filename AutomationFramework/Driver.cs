@@ -1,5 +1,4 @@
-﻿using AutomationFramework.Log;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using System;
 
@@ -21,9 +20,9 @@ namespace DemoWebApp.Tests
 
             Instance.Manage().Window.Maximize();
 
-            Logger.InitLogger();//инициализация - требуется один раз в начале
+            //Logger.InitLogger();//инициализация - требуется один раз в начале
 
-            Logger.Log.Info("Ура заработало!");
+            //Logger.Log.Info("Ура заработало!");
         }
 
         public static void Close()
