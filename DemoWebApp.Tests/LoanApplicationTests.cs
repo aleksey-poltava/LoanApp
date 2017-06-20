@@ -19,6 +19,14 @@ namespace DemoWebApp.Tests
             Assert.IsTrue(MainPage.IsOn());
         }
 
+        [Test]
+        public void Can_Access_Loan_Application_Page()
+        {
+            MainPage.GoTo();
+            MainPage.ApplyNowMainBtn();
+            Assert.IsTrue(LoanApplication.IsOn());
+        }
+
         [TestFixtureTearDown]
         public void TearDown()
         {

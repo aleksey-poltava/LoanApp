@@ -94,6 +94,7 @@
     <Compile Include="Helpers\ConfigReader.cs" />
     <Compile Include="Helpers\HtmlElements.cs" />
     <Compile Include="Log\Logger.cs" />
+    <Compile Include="Pages\LoanApplication.cs" />
     <Compile Include="Pages\MainPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Server.cs" />
